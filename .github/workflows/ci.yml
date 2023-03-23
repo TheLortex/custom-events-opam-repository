@@ -21,3 +21,5 @@ jobs:
           opam-repositories: |
             default: https://github.com/ocaml/opam-repository.git
             custom-events: /home/runner/work/custom-events-opam-repository/custom-events-opam-repository
+
+      - run: opam install eio.0.8.1+custom-events eio_main
