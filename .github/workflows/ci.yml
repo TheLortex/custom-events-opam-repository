@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use OCaml 5.0.0+custom-events
+        uses: ocaml/setup-ocaml@v2
+        with:
+          ocaml-compiler: 5.0.0+custom-events
+          opam-repositories: |
+            default: https://github.com/ocaml/opam-repository.git
+            custom-events: .
