@@ -58,8 +58,8 @@ build: [
 ]
 install: [make "install"]
 url {
-  src: "https://github.com/TheLortex/ocaml/archive/refs/tags/5.0.0+custom-events.zip"
-  checksum: "sha256=dceb5c8901c4d6b26a2266809643fb4a4d892f38cd263b1e8ca9d936a68800fc"
+  src: "https://github.com/TheLortex/ocaml/archive/refs/tags/5.0.0+custom-events.1.zip"
+  checksum: "sha256=de2035655d4c264cf87da065262575535c679b5455932e7be8fb91287026d5e8"
 }
 extra-files: ["ocaml-variants.install" "md5=3e969b841df1f51ca448e6e6295cb451"]
 post-messages: [
